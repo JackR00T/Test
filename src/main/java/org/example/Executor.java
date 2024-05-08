@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class Executor {
-    private String executeCommand(String command) throws IOException, InterruptedException {
+    public String executeCommand(String command) throws IOException, InterruptedException {
         ProcessBuilder processBuilder = new ProcessBuilder();
         processBuilder.command("sh", "-c", command);
 
